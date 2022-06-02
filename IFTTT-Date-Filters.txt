@@ -1,0 +1,17 @@
+var date1 = new Date('5-10-2022');
+var date2 = new Date('6-10-2022');
+
+var currentdate = new Date(); 
+var datetemp = (currentdate.getMonth()+1) + "-"
+                + (currentdate.getDate())  + "-" 
+                + currentdate.getFullYear();
+ var today = new Date(datetemp)             
+
+ if (today.getTime() >= date1.getTime() && today.getTime() <= date2.getTime()) {
+  Email.sendMeEmail.setSubject("Still here on Vacation");
+}
+else {
+  Email.sendMeEmail.setSubject("already in a new place");
+}
+
+
